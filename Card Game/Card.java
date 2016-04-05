@@ -67,6 +67,9 @@ public class Card {
      *         false otherwise.
      */
     public boolean matches(Card otherCard) {
+        if(this.suit() == otherCard.suit() && this.rank() == otherCard.rank() && this.pointValue == otherCard.pointValue()){
+            return true;
+        }
         return false;
     }
 
@@ -82,6 +85,6 @@ public class Card {
      */
     @Override
     public String toString() {
-        return "test";
+        return this.rank() + " of " + this.suit() + " (point value = [ " + this.pointValue + " ])";
     }
 }
