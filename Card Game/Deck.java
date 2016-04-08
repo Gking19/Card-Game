@@ -55,7 +55,7 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {
-        return size;
+        return size=cards.size();
     }
 
     /**
@@ -107,6 +107,8 @@ public class Deck {
         }
 
         rtn = rtn + "\n";
+        System.out.println(rtn);
         return rtn;
+        
     }
 }
