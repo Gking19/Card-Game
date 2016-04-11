@@ -54,7 +54,11 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {
+<<<<<<< HEAD
         return cards.size();
+=======
+        return size=cards.size();
+>>>>>>> origin/master
     }
 
     /**
@@ -112,6 +116,8 @@ public class Deck {
         }
 
         rtn = rtn + "\n";
+        System.out.println(rtn);
         return rtn;
+        
     }
 }
