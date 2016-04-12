@@ -19,7 +19,6 @@ public class Deck {
      * The next card to be dealt is at size - 1.
      */
     private int size;
-    
 
     /**
      * Creates a new <code>Deck</code> instance.<BR>
@@ -54,11 +53,7 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {
-<<<<<<< HEAD
         return cards.size();
-=======
-        return size=cards.size();
->>>>>>> origin/master
     }
 
     /**
@@ -75,11 +70,10 @@ public class Deck {
      *         previously dealt.
      */
     public Card deal() {
-        int deckSize = size;
-        deckSize--;
+        size--;
 
         if(size > 0){
-            return cards.get(deckSize);
+            return cards.get(size);
         }
         return null;
     }
@@ -118,6 +112,6 @@ public class Deck {
         rtn = rtn + "\n";
         System.out.println(rtn);
         return rtn;
-        
+
     }
 }
